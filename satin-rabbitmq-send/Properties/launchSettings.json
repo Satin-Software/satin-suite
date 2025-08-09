@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "satin-rabbitmq-send": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Test Message\""
+    }
+  }
+}

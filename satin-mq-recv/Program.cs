@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using satin_common;
 using System.Text;
 
-namespace satin_rabbitmq_recv
+namespace satin_
 {
     public class Program
     {

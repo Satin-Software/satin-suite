@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using satin_common;
 using System.Text;
 
-namespace satin_rabbitmq_recv
+namespace satin_mq_recv
 {
     public class Program
     {
@@ -50,7 +50,7 @@ namespace satin_rabbitmq_recv
                         var message = Encoding.UTF8.GetString(body);
                         logger.write($"Message '{message}' received on topic '{topic}'");
 
-                        string file_name = $"{app_env.project_name}_{DateTime.Now:yyyyMMdd_HHmmss}.msg";
+                        string file_name = $"{app_env.project_name}_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
                         File.WriteAllText(Path.Combine(app_env.tmp_dir, file_name), message);
 
                         // Process your message here

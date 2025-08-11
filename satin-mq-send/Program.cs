@@ -2,7 +2,7 @@
 using satin_common;
 using System.Text;
 
-namespace satin_rabbitmq_send
+namespace satin_mq_send
 {
     public class Program
     {

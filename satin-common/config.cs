@@ -7,6 +7,12 @@
         public Config()
         {
             _config = load_ini(app_env.ini_file);
+
+            string str = get("Logname", "");
+            if (!string.IsNullOrEmpty(str))
+            {
+                app_env.log_file = Path.Combine(app_env.log_dir, $"{str}.log");
+            }
         }
 
         private Dictionary<string, string> load_ini(string file_path)

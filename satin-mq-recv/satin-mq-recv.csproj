@@ -9,6 +9,9 @@
     <!-- <PublishAot>true</PublishAot> -->
     <PublishSingleFile>true</PublishSingleFile>
     <InvariantGlobalization>true</InvariantGlobalization>
+
+    <Version>1.0.0.1</Version>
+    <FileVersion>1.0.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

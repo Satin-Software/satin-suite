@@ -20,6 +20,7 @@ namespace satin_common
             {
                 AutoFlush = true
             };
+            write("-----------------------------------------");
             write("Log Start");
         }
 
@@ -40,12 +41,6 @@ namespace satin_common
             _log_writer?.Flush();
             _log_writer?.Close();
             _log_writer?.Dispose();
-
-            // move file from 'tmp' to 'log'
-            if (File.Exists(app_env.log_file))
-            {
-                File.Move(app_env.log_file, Path.Combine(app_env.log_dir, Path.GetFileName(app_env.log_file)));
-            }
         }
     }
 }

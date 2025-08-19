@@ -1,8 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- Multi-targeting -->
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+
+    <!-- Produce EXEs, not DLLs -->
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    
     <RootNamespace>satin_mq_send</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

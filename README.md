@@ -24,8 +24,8 @@ This repository contains following command-line utilities :
 
 ## Documentation
 
-- [satin-mq-recv.exe Manual](docs\satin-mq-recv.md)
-- [satin-mq-send.exe Manual](docs\satin-mq-send.md)
+- [satin-mq-recv.exe Manual](docs/satin-mq-recv.md)
+- [satin-mq-send.exe Manual](docs/satin-mq-send.md)
 
 ## Directory Structure
 

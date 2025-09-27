@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Multi-targeting -->
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+
+    <!-- Produce EXEs, not DLLs -->
+    <OutputType>Exe</OutputType>
+
+    <RootNamespace>satin_interface_tv</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- <PublishAot>true</PublishAot> -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <InvariantGlobalization>true</InvariantGlobalization>
+
+    <Version>1.0.0.3</Version>
+    <FileVersion>1.0.0.3</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\satin-common\satin-common.csproj" />
+  </ItemGroup>
+
+</Project>

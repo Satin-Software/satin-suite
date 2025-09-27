@@ -6,10 +6,16 @@ A collection of supporting utilities for satin software.
 
 This repository contains following command-line utilities :
 
+- **satin-interface-tv.exe** - synchronize hotel TV check-in/check-out status with PMS
 - **satin-mq-recv.exe** - Receives and processes messages from the queue
 - **satin-mq-send.exe** - Sends messages to the queue
 
 ## Quick Start
+
+### synchronize hotel TV
+```bash
+.\satin-interface-tv.exe
+```
 
 ### Receiving Messages
 ```bash
@@ -23,7 +29,7 @@ This repository contains following command-line utilities :
 ```
 
 ## Documentation
-
+- [satin-interface-tv.exe Manual](docs/satin-interface-tv.md)
 - [satin-mq-recv.exe Manual](docs/satin-mq-recv.md)
 - [satin-mq-send.exe Manual](docs/satin-mq-send.md)
 
@@ -33,6 +39,7 @@ This repository contains following command-line utilities :
 .
 ├── README.md
 ├── docs\
+│   ├── satin-interface-tv.md
 │   ├── satin-mq-recv.md
 │   └── satin-mq-send.md
 ```

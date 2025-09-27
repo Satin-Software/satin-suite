@@ -2,25 +2,37 @@
 setlocal enabledelayedexpansion
 
 echo Build for Win7 (uses .NET 6 runtime) satin-mq-recv
+echo --------------------------------------------------
 dotnet publish satin-mq-recv\satin-mq-recv.csproj -c Release -f net6.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win7
 echo Build for Win7 (uses .NET 6 runtime) satin-mq-send
+echo --------------------------------------------------
 dotnet publish satin-mq-send\satin-mq-send.csproj -c Release -f net6.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win7
+echo Build for Win7 (uses .NET 6 runtime) satin-interface-tv
+echo -------------------------------------------------------
+dotnet publish satin-interface-tv\satin-interface-tv.csproj -c Release -f net6.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win7
 
 echo Build for Win10/11 (uses .NET 8 runtime) satin-mq-recv
+echo ------------------------------------------------------
 dotnet publish satin-mq-recv\satin-mq-recv.csproj -c Release -f net8.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win10-11
 echo Build for Win10/11 (uses .NET 8 runtime) satin-mq-send
+echo ------------------------------------------------------
 dotnet publish satin-mq-send\satin-mq-send.csproj -c Release -f net8.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win10-11
+echo Build for Win10/11 (uses .NET 8 runtime) satin-interface-tv
+echo -----------------------------------------------------------
+dotnet publish satin-interface-tv\satin-interface-tv.csproj -c Release -f net8.0 -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./publish/win10-11
 
 REM Check if first argument is /z (to create release.zip)
 if "%~1"=="/z" (
 	:: Remove and clean release folder
 	echo Cleaning up old release folder...
+	echo ---------------------------------
 	if exist publish\release (
 		rmdir /s /q publish\release
 	)
 
 	:: Create the release directories if they don’t exist
 	echo Creating release folders...
+	echo ---------------------------
 	mkdir publish\release\win7
 	mkdir publish\release\win10-11
 
@@ -50,6 +62,7 @@ if "%~1"=="/z" (
 
 	:: Create a zip file containing the release folder and its contents (Using Powershell Compress-Archive command)
 	echo Creating satin-suite_v.zip ...
+	echo ------------------------------
 	powershell -command "Compress-Archive -Path publish\release\* -DestinationPath publish\satin-suite_v.zip -Force"
 )
 

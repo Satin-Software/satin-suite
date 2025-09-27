@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "satin-mq-recv", "satin-mq-r
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "satin-mq-send", "satin-mq-send\satin-mq-send.csproj", "{8BDD55E0-481D-49BB-84EF-449648EEF963}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "satin-interface-tv", "satin-interface-tv\satin-interface-tv.csproj", "{B707BF08-DCDB-4B1D-90C4-E8E9CF1D32D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "satin-pay", "satin-pay\satin-pay.csproj", "{201FD374-29E2-4C59-8C29-E6BF7B7F0C8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8BDD55E0-481D-49BB-84EF-449648EEF963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BDD55E0-481D-49BB-84EF-449648EEF963}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BDD55E0-481D-49BB-84EF-449648EEF963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B707BF08-DCDB-4B1D-90C4-E8E9CF1D32D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B707BF08-DCDB-4B1D-90C4-E8E9CF1D32D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B707BF08-DCDB-4B1D-90C4-E8E9CF1D32D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B707BF08-DCDB-4B1D-90C4-E8E9CF1D32D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201FD374-29E2-4C59-8C29-E6BF7B7F0C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201FD374-29E2-4C59-8C29-E6BF7B7F0C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201FD374-29E2-4C59-8C29-E6BF7B7F0C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201FD374-29E2-4C59-8C29-E6BF7B7F0C8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
